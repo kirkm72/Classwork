@@ -1,0 +1,17 @@
+body {
+  background-color: white;
+}
+h1 {background-color: black; color: white; text-align: center;}
+.row {
+    display: flex;
+  }
+  
+.column {
+    float: left;
+    flex: 50%;
+  }
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
