@@ -1,0 +1,45 @@
+.BoldFont{
+    font-weight: bold;
+}
+
+.LargeFont{
+    font-size: 24px;
+
+}
+
+.XLargeFont{
+    line-height: 50px;
+}
+
+/* a:active{
+
+}
+
+a:visited{
+    color:
+
+}
+
+a:hover{
+    font-weight: bold;
+    color:red;
+}
+
+a:focus{
+
+} */
+
+span {
+    display: inline-block;
+    width: 100px;
+}
+
+#email a:hover{
+    font-weight: bold;
+    color:red;
+}
+
+#github a:hover{
+    font-weight: bold;
+    color: fuchsia;
+}
