@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <title>Bootstrap magic 27july19</title>
+                <link href="https://fonts.googleapis.com/css?family=Audiowide|IBM+Plex+Mono|Libre+Barcode+39&display=swap" rel="stylesheet">
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <style>
+                    .cobra-image{
+                        height: 200px;
+                        width: 200px;
+                    }
+                    .header {
+                        margin:25px auto;
+                    }
+                    .the-border {
+                        border-bottom: 2px solid black;
+                        margin: 25px auto;
+                    }
+                </style>
+        </head>
+        <!-- when using bootstrap use row and column classes to control positioning -->
+        <!-- first "col-md" denotes starting and second denotes ending column -->
+        <!-- the "MD" stands for medium screen.. other options are xs, sm, lg, etc -->
+        <body class="container-fluid">
+            <header class="row">
+                <!-- below div means occupies 2 columns and and offset of 4 columns -->
+                <div class="col-md-2 offset-md-4">
+                    <img class="cobra-image" src="https://rzzy0b736k-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/NEWS-CobraKai-1024x533.jpg">
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    <h1>CodeBrah Kai</h1>
+                </div>
+            </header>
+        </body>
+</html>
+
+<!-- Below block is to do wireframe from 27juyl's pdf slide36 -->
+<style>
+    .row{
+        border: 2px solid red;
+    }
+/* Ask jeff for more deatils and the  greater than in the style */
+    .row > div{
+        border: 2px sold green;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    </style>
+<body class="container-fluid">
+        <div class="row">
+                <div class="col-md-10 offset-md-1">This column has an offset of 1 and ocupies 10 columns</div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 offset-md-1">This column has an offset of 1 and ocupies 10 columns</div>
+            </div>
+            <div class="row">
+                <div class="offset-md-1 col-md-1">This column has an offset of 1 and ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+                <div class="col-md-1">This column ocupies 1 column</div>
+            </div>
+            <div class="row">
+                <div class="offset-md-1 col-md-2">This column has an offset of 1 and ocupies 2 columns</div>
+                <div class="col-md-2">This column ocupies 2 columns</div>
+                <div class="col-md-2">This column ocupies 2 columns</div>
+                <div class="col-md-2">This column ocupies 2 columns</div>
+                <div class="col-md-2">This column ocupies 2 columns</div>
+            </div>
+            <div class="row">
+                <div class="offset-md-1 col-md-5">This column has an offset of 1 and ocupies 5 columns</div>
+                <div class="col-md-5">This column ocupies 5 columns</div>
+            </div>
+            <footer class="row">
+                <div class="col-md-12">This column does not have an offset of 1 and ocupies 12 columns</div>
+            </footer>
+</body>
+
+
+<!-- below block demonstrates sub-rows and sub columns -->
