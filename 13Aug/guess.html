@@ -1,0 +1,81 @@
+<DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Word Guess</title>
+        <!-- <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+        <!-- Bootstrap links provided in Bootstrap 3.4.1 basic template header -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>  
+        <!-- My raw css file -->
+        <!-- <link rel="stylesheet" type="text/css" href="./assets/css/style.css">  -->
+    </head>
+
+    <body>
+        <script>
+            const wordGroup = ['dog', 'bird', 'elephant'];
+            const randomNumber = Math.floor(Math.random() * wordGroup.length); 
+            const tempWord = wordGroup[randomNumber];
+            console.log(tempWord);
+            let tempArray=[];
+            let guess = 3;
+            let success = false;
+
+            for (let i=0; i<wordGroup[randomNumber].length; i++){
+                for (let j=0; j<tempWord.length; j++){
+                    // tempArray.push('-');
+                    console.log('tempArray ' +tempArray);
+                }
+                tempArray.push('-');
+            }
+
+            document.onkeyup = function(event){
+                let success=false;
+                let userGuess = event.key;
+                console.log(' guessed letter ' + userGuess);
+                for (let k=0; k<=tempWord.length; k++){
+                    // console.log(k);
+                    // console.log(tempWord);
+                    if (userGuess === tempWord[k]){
+                        console.log(tempWord[k] + ' correct letter');
+                        tempArray[k] = tempWord[k]; 
+                        success = true;
+
+                    }   
+                        console.log('current temparray ' + tempArray);                   
+                }
+
+                if (!success){
+                    guess--;
+                    console.log('guess correct?' + success + ' remaining guesses ' + guess);
+                }
+
+                if (guess===0){
+                console.log('game over');
+                }  
+
+                console.log(tempArray.join(''))
+                if (tempWord === tempArray.join('')){
+                console.log('You Win')
+                }
+            } 
+                
+                    
+
+        </script>
+       
+
+
+
+        <footer>
+
+
+        </footer>
+    </body>
+
+    
+
+    </html>

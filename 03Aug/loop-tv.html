@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      // Defining the empty array favTVshows & defining variable tvShow
+      const favTVshows = [];
+      let tvShow;
+
+      // For Loop Elements Repeats 3
+      for (let i = 1; i < 4; i++) {
+
+        // Prompting you for the name of tv shows. Will ask 3 times populating each array cell on each iteration
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // Pushing the latest entry to the end of the array
+        favTVshows.push(tvShow);
+      }
+
+      // ????
+      for (let j = 0; j < favTVshows.length; j++) {
+
+        // show onscreen the current array cell contents
+        alert(favTVshows[j]);
+      }
+
+    </script>
+
+  </body>
+</html>

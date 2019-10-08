@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jscript dump example 2</title>
+  </head>
+  <body>
+
+    <div id="empty-div"></div>
+    <script >
+        var targetDiv = document.querySelector('#empty-div');
+
+      // Below code will concatenate the two outputs
+        targetDiv.textContent = 'Hello Friends';
+        targetDiv.textContent += 'nice to meet you';
+
+    // Below code will create a new HTML tag and assign the text to it.
+      const newDiv = document.createElement("h1");
+      newDiv.textContent = "A pleasure to meet you";
+      newDiv.appendChild(newDiv);
+
+      newDiv.setAttribute("class", "fancy")
+
+
+    </script>
+
+
+  </body>
+</html>

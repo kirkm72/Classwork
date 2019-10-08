@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href='./assets/css/style.css'> -->
+    <title>Psychic Game</title>
+  </head>
+  <body>
+    <script>
+        function isPalindrome(word){
+            let reversedWord='';
+
+            for(let i=word.length-1; i>=0; i--) {
+                reversedWord += word[i];
+                return word === reversedWord;
+                // Jeff's method below several "." methods in lone work like unix pipe
+                // return word === word.split('').reverse().join('')
+            }
+
+        }
+    console.log(isPalindrome('dopapod'));
+    </script>
+
+
+
+  </body>

@@ -1,0 +1,13 @@
+1. Which topics seem fuzzy?
+    Bootstrap functionalities.
+2. What specific questions for these topics?
+    Why not backwards compatible?
+3. What conceptual questions do I have?
+    N/a Don't have enough starting JQuery info to be able to ask.
+
+JScript has 2 types of variables:
+Primitive (one thing) & object(multi dimensional variable)  Arrays count as objects.
+Review more about callback functions
+
+Learn Agile method (sprints) For time management
+    Pomodoro Technique

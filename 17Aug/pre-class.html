@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <!-- Viewport meta tag -->
+                <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                <title>TEMPLATE</title>
+                <!-- Example of google fonts -->
+                <link href="https://fonts.googleapis.com/css?family=Audiowide|IBM+Plex+Mono|Libre+Barcode+39&display=swap" rel="stylesheet">
+                <!-- Bootstrap css library -->
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                <!-- bootstrap Javascript code -->
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                <!-- Load JQuery library -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                
+        </head>
+        <body>
+
+
+            <script>
+               
+                    // create empty Object
+                    // loop through string and add in to object to get all characters in to object
+                    // loop again to push to object new counts  
+                    
+
+
+               
+
+                function firstNonRepeatChar(inputString){
+                    const map= {},
+                    for (let i=0; i < word.length; i++){
+                        const char = word[i];
+                        if (char in map) {
+                            map[char]++;
+                        }               
+                        else {
+                            map[char]
+                        }
+                    }
+                    return map;
+
+                    for(let char in map){
+                        if (map[char] ===1){
+                        return map[char];
+                        }
+                    }
+                }
+                // Use below code instead of the arrray solution above
+                Object.keys(map).foreach(function(char)){
+                    if (map[char] === 1 && result ===undefined){
+                        result = char;
+                    }
+                    console.log(char);
+                }
+
+
+
+
+                
+                console.log(firstNonRepeatChar('cab'));
+
+
+
+            </script>
+
+        </body>

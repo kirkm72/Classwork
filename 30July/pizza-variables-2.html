@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pizza Console - Unsolved</title>
+  </head>
+  <body>
+    
+    <script type="text/javascript">
+      function getPizzaCount() {
+        let pizzaCount = document.querySelector('#pizzaCount').value;
+        pizzaCount = parseInt(pizzaCount);
+        pizzaCount++;
+        let result = document.querySelector('#result');
+        result.innerText = pizzaCount;
+      }
+  
+    </script>
+
+
+    <label for="pizzaCount">PizzaCount:</label>
+    <input id="pizzaCount" type ="text" />
+    <button onclick="getPizzaCount()">Show us Pizza Count</button>
+    <div id="result"></div>
+    
+  </body>
+</html>

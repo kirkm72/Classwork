@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+
+  </div>
+  <p id="Score">Rock, Paper, Scissors score.</p>
+  <p id="gameOver"> </p>
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+    let humanScore=0;
+    let compScore=0;
+    let ties=0;
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      alert("User guess: " + userGuess);
+
+      // Alerts the Computer's guess.
+      alert("Computer guess: " + computerGuess);
+
+        if(computerGuess === userGuess){
+            alert("Tie game");
+            ties++;
+        }
+        else if(computerGuess === "r" && userGuess === "s"){
+            alert("Computer wins");
+            compScore++;
+        }
+        else if(computerGuess === "r" && userGuess === "p"){
+            alert("Human wins");
+            humanScore++;
+        }
+        else if(computerGuess === "p" && userGuess === "s"){
+            alert("Human wins");
+            humanScore++;
+        }
+        else if(computerGuess === "p" && userGuess === "r"){
+            alert("Computer wins");
+            compScore++;
+        }
+        else if(computerGuess === "s" && userGuess === "p"){
+            alert("Computer wins");
+            compScore++;
+        }
+        else if(computerGuess === "s" && userGuess === "r"){
+            alert("Human wins");
+            humanScore++;
+        }
+      
+      alert('Human Score: ' + humanScore + ' ' + 'Computer Score: ' + compScore + ' ' + 'Ties: ' + ties);
+      
+        document.getElementById("Score").innerHTML = 'Human Score: ' + humanScore + ' ' + 'Computer Score: ' + compScore + ' ' + 'Ties: ' + ties;
+
+        if (humanScore === 10){
+            document.getElementById("gameOver").innerHTML = "Human wins the match!";
+        }
+        if (compScore === 10){
+            document.getElementById("gameOver").innerHTML = "Computer wins the match!";
+        }
+    }
+  </script>
+
+</body>
+
+</html>

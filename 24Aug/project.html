@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+​
+<title>NY Times Search</title>
+<header>
+    <!-- <link rel= "stylesheet" href="style.css"> -->
+​
+</header>
+​
+​
+<body>
+​
+<div class="container">
+    <h1>
+        New York Times Search
+    </h1>
+</div>
+​
+<div class="container">
+    <form>
+        <div>
+            <label>
+                search term:
+                <input type="text" id="search-term">
+            </label>
+        </div>
+​
+        <div>
+                <label>
+                    Number of records to retrieve:
+                    <select class="number-select">
+                            <option value="1">1</option>
+                            <option value="5" selected="">5</option>
+                            <option value="10">10</option>
+​
+                        </select> 
+                </label>
+            </div>
+​
+            <div>
+                    <label>
+                        Start Year (Optional):
+                        <input type="text" id="start-year">
+                        
+                    </label>
+                </div>
+            
+                <div>
+                        <label>
+                            End Year (optional):
+                            <input type="text" id="end-year">
+                            
+                        </label>
+                    </div>
+            <button type="submit" id="search-button">Search</button>
+            <button type="button" id="clear-all">Clear Results</button>
+​
+    </form>
+</div>
+​
+<div class="container">
+    <div class="outer">
+        <div>
+            <br>
+            <div class="panel">
+                <div>Panel Heading
+                
+                </div>
+​
+            </div>
+​
+        </div>
+    </div>
+</div>
+​
+<div>
+    <div>
+        <h6>made by:</h6>
+    </div>
+</div>
+​<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+​<script type="text/javascript" src='assets/javascript/nytRetriever.js'></script>
+</body>
+​
+​
+</html>

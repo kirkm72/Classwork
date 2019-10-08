@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trigger Clicked</title>
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Click to Eat Sandwich</h1>
+  <button id="pbj">Peanut Butter Jelly</button>
+  <button id="grilledcheese">Grilled Cheese</button>
+  <button id="roastbeef">Roast Beef</button>
+
+  <script type="text/javascript">
+
+    // This document.ready isn't necessary in this example... but is needed in cases where the HTML is complex.
+    // This code makes sure that the JavaScript doesn't get run until the HTML is finished loading
+    // It's useful to become familiar with now.
+
+    $(document).ready(function() {
+
+        let pbjCount = 0;
+        let gcCount = 0;
+        let rbCount = 0;
+
+        $("#pbj").on("click", function() {
+            pbjCount ++;
+            alert("PB&J is for kids");  
+            alert("You have eaten: " + pbjCount + "PB&J's " + gcCount + "Grilled Cheese " + rbCount + "Roast beef ");
+      });
+
+        $("#grilledcheese").on("click", function() {
+            gcCount ++;
+            alert("Grilled cheese... we wish it was steak!!");  
+            alert("You have eaten: " + pbjCount + "PB&J's " + gcCount + "Grilled Cheese " + rbCount + "Roast beef ");
+      });
+
+        $("#roastbeef").on("click", function() {
+            rbCount ++;
+            alert("Wish I was at Arby's");  
+            alert("You have eaten: " + pbjCount + "PB&J's " + gcCount + "Grilled Cheese " + rbCount +"Roast beef ");
+      });
+
+    //   alert("You have eaten: " + pbjCount "PB&J's " + gcCount "Grilled Cheese " + rbCount "Roast beef ");
+    
+
+
+
+      // VARIABLES
+      // ====================================================================
+      // Here we create variables for tracking the number of sandwiches eaten
+      // ...
+
+
+      // ...
+
+      // FUNCTIONS
+      // ====================================================================
+      // Here we create various on "click" functions which capture the clicks
+      // Inside each click event is the code to create an alert, update the counter, then show the updated count.
+      // ...
+
+
+      // ...
+
+    });
+
+</script>
+
+</body>
+
+</html>
